@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BD54DD6E-6990-48BC-9C5E-468FE9CF1152}</ProjectGuid>
+    <RootNamespace>LGP</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.26419.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="LGPComp\LGPConstantSet.cpp" />
+    <ClCompile Include="LGPComp\LGPInstruction.cpp" />
+    <ClCompile Include="LGPComp\LGPOperator.cpp" />
+    <ClCompile Include="LGPComp\LGPOperatorSet.cpp" />
+    <ClCompile Include="LGPComp\LGPPop.cpp" />
+    <ClCompile Include="LGPComp\LGPProgram.cpp" />
+    <ClCompile Include="LGPComp\LGPRegister.cpp" />
+    <ClCompile Include="LGPComp\LGPRegisterSet.cpp" />
+    <ClCompile Include="LGPComp\LGPStats.cpp" />
+    <ClCompile Include="LGPConfig\LGPConfig.cpp" />
+    <ClCompile Include="LGPConstants\LGPProtectedDefinition.cpp" />
+    <ClCompile Include="LGPEnvironment\LGPEnvironment.cpp" />
+    <ClCompile Include="LGPEnvironment\LGPFitnessCase.cpp" />
+    <ClCompile Include="LGPFactories\LGPCrossoverInstruction.cpp" />
+    <ClCompile Include="LGPFactories\LGPCrossoverInstructionFactory.cpp" />
+    <ClCompile Include="LGPFactories\LGPCrossoverInstruction_Linear.cpp" />
+    <ClCompile Include="LGPFactories\LGPCrossoverInstruction_OnePoint.cpp" />
+    <ClCompile Include="LGPFactories\LGPCrossoverInstruction_OneSeg.cpp" />
+    <ClCompile Include="LGPFactories\LGPMutationInstruction.cpp" />
+    <ClCompile Include="LGPFactories\LGPMutationInstructionFactory.cpp" />
+    <ClCompile Include="LGPFactories\LGPMutationInstruction_Macro.cpp" />
+    <ClCompile Include="LGPFactories\LGPPopInitInstruction.cpp" />
+    <ClCompile Include="LGPFactories\LGPPopInitInstructionFactory.cpp" />
+    <ClCompile Include="LGPFactories\LGPPopInitInstruction_ConstantLength.cpp" />
+    <ClCompile Include="LGPFactories\LGPPopInitInstruction_VariableLength.cpp" />
+    <ClCompile Include="LGPFactories\LGPRegInitInstruction.cpp" />
+    <ClCompile Include="LGPFactories\LGPRegInitInstructionFactory.cpp" />
+    <ClCompile Include="LGPFactories\LGPRegInitInstruction_CompleteInputInitReg.cpp" />
+    <ClCompile Include="LGPFactories\LGPRegInitInstruction_Standard.cpp" />
+    <ClCompile Include="LGPFactories\LGPSelectionInstruction.cpp" />
+    <ClCompile Include="LGPFactories\LGPSelectionInstructionFactory.cpp" />
+    <ClCompile Include="LGPFactories\LGPSelectionInstruction_Tournament.cpp" />
+    <ClCompile Include="LGPFactories\LGPSurvivalInstruction.cpp" />
+    <ClCompile Include="LGPFactories\LGPSurvivalInstructionFactory.cpp" />
+    <ClCompile Include="LGPFactories\LGPSurvivalInstruction_Compete.cpp" />
+    <ClCompile Include="LGPFactories\LGPSurvivalInstruction_Probablistic.cpp" />
+    <ClCompile Include="LGPOperators\LGPOperator_Cos.cpp" />
+    <ClCompile Include="LGPOperators\LGPOperator_Division.cpp" />
+    <ClCompile Include="LGPOperators\LGPOperator_Exp.cpp" />
+    <ClCompile Include="LGPOperators\LGPOperator_Ifgt.cpp" />
+    <ClCompile Include="LGPOperators\LGPOperator_Iflt.cpp" />
+    <ClCompile Include="LGPOperators\LGPOperator_Ln.cpp" />
+    <ClCompile Include="LGPOperators\LGPOperator_Minus.cpp" />
+    <ClCompile Include="LGPOperators\LGPOperator_Multiplication.cpp" />
+    <ClCompile Include="LGPOperators\LGPOperator_Plus.cpp" />
+    <ClCompile Include="LGPOperators\LGPOperator_Power.cpp" />
+    <ClCompile Include="LGPOperators\LGPOperator_Sin.cpp" />
+    <ClCompile Include="LGPOperators\LGPOperator_Sqrt.cpp" />
+    <ClCompile Include="LGPUtil\LGPExitSystem.cpp" />
+    <ClCompile Include="LGPUtil\LGPLogger.cpp" />
+    <ClCompile Include="LGPUtil\LGPMath.cpp" />
+    <ClCompile Include="LGPUtil\LGPRandom.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mexican_hat\XEnvironment.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="mexican_hat\XFitnessCase.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="mexican_hat\XOperatorSet.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="mexican_hat\XPop.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="mexican_hat\XProgram.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="spiral_classification\XEnvironment.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)2.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)2.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)2.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)2.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="spiral_classification\XFitnessCase.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)2.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)2.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)2.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)2.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="spiral_classification\XOperatorSet.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)2.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)2.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)2.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)2.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="spiral_classification\XPop.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)2.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)2.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)2.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)2.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="spiral_classification\XProgram.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)2.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)2.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)2.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)2.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="symreg\XEnvironment.cpp" />
+    <ClCompile Include="symreg\XFitnessCase.cpp" />
+    <ClCompile Include="symreg\XOperatorSet.cpp" />
+    <ClCompile Include="symreg\XPop.cpp" />
+    <ClCompile Include="symreg\XProgram.cpp" />
+    <ClCompile Include="tinyxml\tinystr.cpp" />
+    <ClCompile Include="tinyxml\tinyxml.cpp" />
+    <ClCompile Include="tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxml\tinyxmlparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LGPComp\LGPConstantSet.h" />
+    <ClInclude Include="LGPComp\LGPInstruction.h" />
+    <ClInclude Include="LGPComp\LGPOperator.h" />
+    <ClInclude Include="LGPComp\LGPOperatorSet.h" />
+    <ClInclude Include="LGPComp\LGPPop.h" />
+    <ClInclude Include="LGPComp\LGPProgram.h" />
+    <ClInclude Include="LGPComp\LGPRegister.h" />
+    <ClInclude Include="LGPComp\LGPRegisterSet.h" />
+    <ClInclude Include="LGPComp\LGPStats.h" />
+    <ClInclude Include="LGPConfig\LGPConfig.h" />
+    <ClInclude Include="LGPConstants\LGPFlags.h" />
+    <ClInclude Include="LGPConstants\LGPProtectedDefinition.h" />
+    <ClInclude Include="LGPEnvironment\LGPEnvironment.h" />
+    <ClInclude Include="LGPEnvironment\LGPFitnessCase.h" />
+    <ClInclude Include="LGPFactories\LGPCrossoverInstruction.h" />
+    <ClInclude Include="LGPFactories\LGPCrossoverInstructionFactory.h" />
+    <ClInclude Include="LGPFactories\LGPCrossoverInstruction_Linear.h" />
+    <ClInclude Include="LGPFactories\LGPCrossoverInstruction_OnePoint.h" />
+    <ClInclude Include="LGPFactories\LGPCrossoverInstruction_OneSeg.h" />
+    <ClInclude Include="LGPFactories\LGPMutationInstruction.h" />
+    <ClInclude Include="LGPFactories\LGPMutationInstructionFactory.h" />
+    <ClInclude Include="LGPFactories\LGPMutationInstruction_Macro.h" />
+    <ClInclude Include="LGPFactories\LGPPopInitInstruction.h" />
+    <ClInclude Include="LGPFactories\LGPPopInitInstructionFactory.h" />
+    <ClInclude Include="LGPFactories\LGPPopInitInstruction_ConstantLength.h" />
+    <ClInclude Include="LGPFactories\LGPPopInitInstruction_VariableLength.h" />
+    <ClInclude Include="LGPFactories\LGPRegInitInstruction.h" />
+    <ClInclude Include="LGPFactories\LGPRegInitInstructionFactory.h" />
+    <ClInclude Include="LGPFactories\LGPRegInitInstruction_CompleteInputInitReg.h" />
+    <ClInclude Include="LGPFactories\LGPRegInitInstruction_Standard.h" />
+    <ClInclude Include="LGPFactories\LGPSelectionInstruction.h" />
+    <ClInclude Include="LGPFactories\LGPSelectionInstructionFactory.h" />
+    <ClInclude Include="LGPFactories\LGPSelectionInstruction_Tournament.h" />
+    <ClInclude Include="LGPFactories\LGPSurvivalInstruction.h" />
+    <ClInclude Include="LGPFactories\LGPSurvivalInstructionFactory.h" />
+    <ClInclude Include="LGPFactories\LGPSurvivalInstruction_Compete.h" />
+    <ClInclude Include="LGPFactories\LGPSurvivalInstruction_Probablistic.h" />
+    <ClInclude Include="LGPOperators\LGPOperator_Cos.h" />
+    <ClInclude Include="LGPOperators\LGPOperator_Division.h" />
+    <ClInclude Include="LGPOperators\LGPOperator_Exp.h" />
+    <ClInclude Include="LGPOperators\LGPOperator_Ifgt.h" />
+    <ClInclude Include="LGPOperators\LGPOperator_Iflt.h" />
+    <ClInclude Include="LGPOperators\LGPOperator_Ln.h" />
+    <ClInclude Include="LGPOperators\LGPOperator_Minus.h" />
+    <ClInclude Include="LGPOperators\LGPOperator_Multiplication.h" />
+    <ClInclude Include="LGPOperators\LGPOperator_Plus.h" />
+    <ClInclude Include="LGPOperators\LGPOperator_Power.h" />
+    <ClInclude Include="LGPOperators\LGPOperator_Sin.h" />
+    <ClInclude Include="LGPOperators\LGPOperator_Sqrt.h" />
+    <ClInclude Include="LGPUtil\LGPExitSystem.h" />
+    <ClInclude Include="LGPUtil\LGPLogger.h" />
+    <ClInclude Include="LGPUtil\LGPMath.h" />
+    <ClInclude Include="LGPUtil\LGPRandom.h" />
+    <ClInclude Include="mexican_hat\XEnvironment.h" />
+    <ClInclude Include="mexican_hat\XFitnessCase.h" />
+    <ClInclude Include="mexican_hat\XOperatorSet.h" />
+    <ClInclude Include="mexican_hat\XPop.h" />
+    <ClInclude Include="mexican_hat\XProgram.h" />
+    <ClInclude Include="spiral_classification\XEnvironment.h" />
+    <ClInclude Include="spiral_classification\XFitnessCase.h" />
+    <ClInclude Include="spiral_classification\XOperatorSet.h" />
+    <ClInclude Include="spiral_classification\XPop.h" />
+    <ClInclude Include="spiral_classification\XProgram.h" />
+    <ClInclude Include="symreg\XEnvironment.h" />
+    <ClInclude Include="symreg\XFitnessCase.h" />
+    <ClInclude Include="symreg\XOperatorSet.h" />
+    <ClInclude Include="symreg\XPop.h" />
+    <ClInclude Include="symreg\XProgram.h" />
+    <ClInclude Include="tinyxml\tinystr.h" />
+    <ClInclude Include="tinyxml\tinyxml.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

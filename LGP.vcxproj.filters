@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="LGPConfig">
+      <UniqueIdentifier>{204b6a45-d3d3-42b3-b464-c411effcc01a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tinyxml">
+      <UniqueIdentifier>{2d302121-0154-4c13-b68a-c622c2af93b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LGPUtil">
+      <UniqueIdentifier>{3b3e27d5-4a29-4583-91ae-b7eda8e7d5f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LGPComp">
+      <UniqueIdentifier>{96d168ea-5a26-4f46-8cbd-e2a1f7c899f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LGPEnvironment">
+      <UniqueIdentifier>{80da722a-79c5-48d3-97de-4c3c86e2ce00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="symreg">
+      <UniqueIdentifier>{6668cc0f-b0ec-4300-a1d3-6dbf082f6c8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LGPConstants">
+      <UniqueIdentifier>{8cb99310-709e-47c6-b7f9-87a4b7c1e437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LGPFactories">
+      <UniqueIdentifier>{867697b5-0914-47e2-980b-cd83c1606d34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LGPOperators">
+      <UniqueIdentifier>{3e1f2843-333e-4fef-acea-39b8e68fbb47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mexican_hat">
+      <UniqueIdentifier>{2e999935-a222-40a0-be99-24700aee25ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="spiral_classification">
+      <UniqueIdentifier>{e31afa1c-7fe0-4bc6-a123-b1d1cade1871}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPConfig\LGPConfig.cpp">
+      <Filter>LGPConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinystr.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxml.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxmlerror.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxmlparser.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPUtil\LGPExitSystem.cpp">
+      <Filter>LGPUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPUtil\LGPLogger.cpp">
+      <Filter>LGPUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPUtil\LGPMath.cpp">
+      <Filter>LGPUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPUtil\LGPRandom.cpp">
+      <Filter>LGPUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPComp\LGPConstantSet.cpp">
+      <Filter>LGPComp</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPComp\LGPInstruction.cpp">
+      <Filter>LGPComp</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPComp\LGPOperator.cpp">
+      <Filter>LGPComp</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPComp\LGPOperatorSet.cpp">
+      <Filter>LGPComp</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPComp\LGPPop.cpp">
+      <Filter>LGPComp</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPComp\LGPProgram.cpp">
+      <Filter>LGPComp</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPComp\LGPRegister.cpp">
+      <Filter>LGPComp</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPComp\LGPRegisterSet.cpp">
+      <Filter>LGPComp</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPComp\LGPStats.cpp">
+      <Filter>LGPComp</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPEnvironment\LGPEnvironment.cpp">
+      <Filter>LGPEnvironment</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPEnvironment\LGPFitnessCase.cpp">
+      <Filter>LGPEnvironment</Filter>
+    </ClCompile>
+    <ClCompile Include="symreg\XEnvironment.cpp">
+      <Filter>symreg</Filter>
+    </ClCompile>
+    <ClCompile Include="symreg\XFitnessCase.cpp">
+      <Filter>symreg</Filter>
+    </ClCompile>
+    <ClCompile Include="symreg\XOperatorSet.cpp">
+      <Filter>symreg</Filter>
+    </ClCompile>
+    <ClCompile Include="symreg\XPop.cpp">
+      <Filter>symreg</Filter>
+    </ClCompile>
+    <ClCompile Include="symreg\XProgram.cpp">
+      <Filter>symreg</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPConstants\LGPProtectedDefinition.cpp">
+      <Filter>LGPConstants</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPCrossoverInstruction.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPCrossoverInstruction_Linear.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPCrossoverInstruction_OnePoint.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPCrossoverInstruction_OneSeg.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPCrossoverInstructionFactory.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPMutationInstruction.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPMutationInstruction_Macro.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPMutationInstructionFactory.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPPopInitInstruction.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPPopInitInstruction_ConstantLength.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPPopInitInstruction_VariableLength.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPPopInitInstructionFactory.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPRegInitInstruction.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPRegInitInstruction_CompleteInputInitReg.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPRegInitInstruction_Standard.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPRegInitInstructionFactory.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPSelectionInstruction.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPSelectionInstruction_Tournament.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPSelectionInstructionFactory.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPSurvivalInstruction.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPSurvivalInstruction_Compete.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPSurvivalInstruction_Probablistic.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPFactories\LGPSurvivalInstructionFactory.cpp">
+      <Filter>LGPFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPOperators\LGPOperator_Cos.cpp">
+      <Filter>LGPOperators</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPOperators\LGPOperator_Division.cpp">
+      <Filter>LGPOperators</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPOperators\LGPOperator_Exp.cpp">
+      <Filter>LGPOperators</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPOperators\LGPOperator_Ifgt.cpp">
+      <Filter>LGPOperators</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPOperators\LGPOperator_Iflt.cpp">
+      <Filter>LGPOperators</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPOperators\LGPOperator_Ln.cpp">
+      <Filter>LGPOperators</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPOperators\LGPOperator_Minus.cpp">
+      <Filter>LGPOperators</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPOperators\LGPOperator_Multiplication.cpp">
+      <Filter>LGPOperators</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPOperators\LGPOperator_Plus.cpp">
+      <Filter>LGPOperators</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPOperators\LGPOperator_Power.cpp">
+      <Filter>LGPOperators</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPOperators\LGPOperator_Sin.cpp">
+      <Filter>LGPOperators</Filter>
+    </ClCompile>
+    <ClCompile Include="LGPOperators\LGPOperator_Sqrt.cpp">
+      <Filter>LGPOperators</Filter>
+    </ClCompile>
+    <ClCompile Include="mexican_hat\XEnvironment.cpp">
+      <Filter>mexican_hat</Filter>
+    </ClCompile>
+    <ClCompile Include="mexican_hat\XFitnessCase.cpp">
+      <Filter>mexican_hat</Filter>
+    </ClCompile>
+    <ClCompile Include="mexican_hat\XOperatorSet.cpp">
+      <Filter>mexican_hat</Filter>
+    </ClCompile>
+    <ClCompile Include="mexican_hat\XPop.cpp">
+      <Filter>mexican_hat</Filter>
+    </ClCompile>
+    <ClCompile Include="mexican_hat\XProgram.cpp">
+      <Filter>mexican_hat</Filter>
+    </ClCompile>
+    <ClCompile Include="spiral_classification\XEnvironment.cpp">
+      <Filter>spiral_classification</Filter>
+    </ClCompile>
+    <ClCompile Include="spiral_classification\XFitnessCase.cpp">
+      <Filter>spiral_classification</Filter>
+    </ClCompile>
+    <ClCompile Include="spiral_classification\XOperatorSet.cpp">
+      <Filter>spiral_classification</Filter>
+    </ClCompile>
+    <ClCompile Include="spiral_classification\XPop.cpp">
+      <Filter>spiral_classification</Filter>
+    </ClCompile>
+    <ClCompile Include="spiral_classification\XProgram.cpp">
+      <Filter>spiral_classification</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LGPConfig\LGPConfig.h">
+      <Filter>LGPConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml\tinystr.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml\tinyxml.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPUtil\LGPExitSystem.h">
+      <Filter>LGPUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPUtil\LGPLogger.h">
+      <Filter>LGPUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPUtil\LGPMath.h">
+      <Filter>LGPUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPUtil\LGPRandom.h">
+      <Filter>LGPUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPComp\LGPConstantSet.h">
+      <Filter>LGPComp</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPComp\LGPInstruction.h">
+      <Filter>LGPComp</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPComp\LGPOperator.h">
+      <Filter>LGPComp</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPComp\LGPOperatorSet.h">
+      <Filter>LGPComp</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPComp\LGPPop.h">
+      <Filter>LGPComp</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPComp\LGPProgram.h">
+      <Filter>LGPComp</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPComp\LGPRegister.h">
+      <Filter>LGPComp</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPComp\LGPRegisterSet.h">
+      <Filter>LGPComp</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPComp\LGPStats.h">
+      <Filter>LGPComp</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPEnvironment\LGPEnvironment.h">
+      <Filter>LGPEnvironment</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPEnvironment\LGPFitnessCase.h">
+      <Filter>LGPEnvironment</Filter>
+    </ClInclude>
+    <ClInclude Include="symreg\XEnvironment.h">
+      <Filter>symreg</Filter>
+    </ClInclude>
+    <ClInclude Include="symreg\XFitnessCase.h">
+      <Filter>symreg</Filter>
+    </ClInclude>
+    <ClInclude Include="symreg\XOperatorSet.h">
+      <Filter>symreg</Filter>
+    </ClInclude>
+    <ClInclude Include="symreg\XPop.h">
+      <Filter>symreg</Filter>
+    </ClInclude>
+    <ClInclude Include="symreg\XProgram.h">
+      <Filter>symreg</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPConstants\LGPFlags.h">
+      <Filter>LGPConstants</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPConstants\LGPProtectedDefinition.h">
+      <Filter>LGPConstants</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPCrossoverInstruction.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPCrossoverInstruction_Linear.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPCrossoverInstruction_OnePoint.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPCrossoverInstruction_OneSeg.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPCrossoverInstructionFactory.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPMutationInstruction.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPMutationInstruction_Macro.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPMutationInstructionFactory.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPPopInitInstruction.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPPopInitInstruction_ConstantLength.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPPopInitInstruction_VariableLength.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPPopInitInstructionFactory.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPRegInitInstruction.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPRegInitInstruction_CompleteInputInitReg.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPRegInitInstruction_Standard.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPRegInitInstructionFactory.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPSelectionInstruction.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPSelectionInstruction_Tournament.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPSelectionInstructionFactory.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPSurvivalInstruction.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPSurvivalInstruction_Compete.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPSurvivalInstruction_Probablistic.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPFactories\LGPSurvivalInstructionFactory.h">
+      <Filter>LGPFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPOperators\LGPOperator_Cos.h">
+      <Filter>LGPOperators</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPOperators\LGPOperator_Division.h">
+      <Filter>LGPOperators</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPOperators\LGPOperator_Exp.h">
+      <Filter>LGPOperators</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPOperators\LGPOperator_Ifgt.h">
+      <Filter>LGPOperators</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPOperators\LGPOperator_Iflt.h">
+      <Filter>LGPOperators</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPOperators\LGPOperator_Ln.h">
+      <Filter>LGPOperators</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPOperators\LGPOperator_Minus.h">
+      <Filter>LGPOperators</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPOperators\LGPOperator_Multiplication.h">
+      <Filter>LGPOperators</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPOperators\LGPOperator_Plus.h">
+      <Filter>LGPOperators</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPOperators\LGPOperator_Power.h">
+      <Filter>LGPOperators</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPOperators\LGPOperator_Sin.h">
+      <Filter>LGPOperators</Filter>
+    </ClInclude>
+    <ClInclude Include="LGPOperators\LGPOperator_Sqrt.h">
+      <Filter>LGPOperators</Filter>
+    </ClInclude>
+    <ClInclude Include="mexican_hat\XEnvironment.h">
+      <Filter>mexican_hat</Filter>
+    </ClInclude>
+    <ClInclude Include="mexican_hat\XFitnessCase.h">
+      <Filter>mexican_hat</Filter>
+    </ClInclude>
+    <ClInclude Include="mexican_hat\XOperatorSet.h">
+      <Filter>mexican_hat</Filter>
+    </ClInclude>
+    <ClInclude Include="mexican_hat\XPop.h">
+      <Filter>mexican_hat</Filter>
+    </ClInclude>
+    <ClInclude Include="mexican_hat\XProgram.h">
+      <Filter>mexican_hat</Filter>
+    </ClInclude>
+    <ClInclude Include="spiral_classification\XEnvironment.h">
+      <Filter>spiral_classification</Filter>
+    </ClInclude>
+    <ClInclude Include="spiral_classification\XFitnessCase.h">
+      <Filter>spiral_classification</Filter>
+    </ClInclude>
+    <ClInclude Include="spiral_classification\XOperatorSet.h">
+      <Filter>spiral_classification</Filter>
+    </ClInclude>
+    <ClInclude Include="spiral_classification\XPop.h">
+      <Filter>spiral_classification</Filter>
+    </ClInclude>
+    <ClInclude Include="spiral_classification\XProgram.h">
+      <Filter>spiral_classification</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

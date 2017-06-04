@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+*.ncb
+
+.vc/
+
+Debug/
+Release/
+
+lgp_err.txt
