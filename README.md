@@ -1,6 +1,10 @@
 # cpp-linear-genetic-programming
 
-Package provides C++ implementation of linear genetic programming algorithm
+Package provides C++ implementation of linear genetic programming algorithms described in the book "Linear Genetic Programming".
+
+# Introduction
+
+Linear Genetic Programming examines the evolution of imperative computer programs written as linear sequences of instructions. In contrast to functional expressions or syntax trees used in traditional Genetic Programming (GP), Linear Genetic Programming (LGP) employs a linear program structure as genetic material whose primary characteristics are exploited to achieve acceleration of both execution time and evolutionary progress (From the book "Linear Genetic Programming").
 
 # Usage
 
