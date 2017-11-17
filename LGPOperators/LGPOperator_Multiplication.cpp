@@ -15,7 +15,7 @@ int LGPOperator_Multiplication::Execute(const LGPRegister* operand1, const LGPRe
 {
 	double x1=operand1->ToDouble();
 	double x2=operand2->ToDouble();
-	destination_register->SetValue(x1+x2);
+	destination_register->SetValue(x1 * x2);
 
 	return LGP_EXECUTE_NEXT_INSTRUCTION;
 }
